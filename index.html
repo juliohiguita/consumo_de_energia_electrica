@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="shortcut icon" href="./img/energi.png" />
+    <title>Energy</title>
+</head>
+<body>
+    
+    <div class="container">
+    <h1> 💲 Calculo Costo de Energia por Piso</h1>
+        <form id="formulario">
+            <label for="consumoUsuario1">Consumo en kWh del Usuario 1 👤 :</label>
+            <input type="number" id="consumoUsuario1" step="0.01" required>
+
+            <label for="consumoUsuario2">Consumo en kWh del Usuario 2 👤 :</label>
+            <input type="number" id="consumoUsuario2" step="0.01" required>
+
+            <label for="subsidio">Valor del subsidio aplicado (por defecto $84.225.05 COP):</label>
+            <input type="number" id="subsidio" step="0.01" value="84225.05">
+
+            <label for="alumbradoAseo">Valor total de alumbrado público y aseo (por defecto  $58.040.00):</label>
+            <input type="number" id="alumbradoAseo" step="0.01" value="58040.00">
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="resultados" id="resultados">
+            <h2>Resultados</h2>
+            <p id="costoUsuario1"></p>
+            <p id="costoUsuario2"></p>
+            <p id="totalSinSubsidio"></p>
+            <p id="totalConSubsidio"></p>
+            <p id="porcentajeUsuario1"></p>
+            <p id="porcentajeUsuario2"></p>
+            <p id="subsidioUsuario1"></p>
+            <p id="subsidioUsuario2"></p>
+            <p id="alumbradoAseoPorUsuario"></p>
+            <p id="costoFinalUsuario1"></p>
+            <p id="costoFinalUsuario2"></p>
+            <p id="costoTotalFinal"></p>
+        </div>
+    </div>
+
+    <script src="./funcionalidad.js">
+
+    </script>
+</body>
+</html>
