@@ -1,5 +1,5 @@
   // Definimos el costo por kWh en pesos colombianos
-  const COSTO_POR_KWH = 976.16;
+  const COSTO_POR_KWH = 985.70;
 
   // Función para calcular el costo total del consumo de energía
   function calcularCosto(consumoKwh) {
